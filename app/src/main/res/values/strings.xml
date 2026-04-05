@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecipePlannerLite</string>
+    <string name="title_activity_asign_recipe_screen">AsignRecipeScreen</string>
 </resources>

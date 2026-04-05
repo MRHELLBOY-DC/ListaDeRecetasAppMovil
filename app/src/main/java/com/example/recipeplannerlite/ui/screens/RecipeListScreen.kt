@@ -27,6 +27,7 @@ fun RecipeListScreen(
     onSearchQueryChange: (String) -> Unit,
     onIngredientFilterChange: (String) -> Unit,
     onCreateRecipeClick: () -> Unit,
+    onWeekPlannerClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val noBlueFocusColors = OutlinedTextFieldDefaults.colors(
@@ -50,6 +51,9 @@ fun RecipeListScreen(
                 onCreateRecipeClick()
             }) {
                 Text("Crear receta")
+            }
+            Button(onClick = onWeekPlannerClick){
+                Text("Ver listado semanal")
             }
         }
 
